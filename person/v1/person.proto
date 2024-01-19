@@ -5,7 +5,7 @@ option go_package = "github.com/broswen/schemas/gen/person";
 
 message Person {
   int32 id = 1;
-  string name = 2;
+  bytes name = 2;
   Address address = 3;
   repeated Item items = 4;
 }
