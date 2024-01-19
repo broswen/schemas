@@ -1,0 +1,26 @@
+syntax = "proto3";
+package person.v1;
+
+option go_package = "github.com/broswen/schemas/gen/person";
+
+message Person {
+  int32 id = 1;
+  string name = 2;
+  Address address = 3;
+  repeated Item items = 4;
+}
+
+message Address {
+  string street = 1;
+  string street2 = 2;
+  string city = 3;
+  string state = 4;
+  int32 zip = 5;
+  string country = 6;
+}
+
+message Item {
+  int32 id = 1;
+  string name = 2;
+  float weight = 3;
+}

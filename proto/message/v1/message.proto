@@ -1,0 +1,12 @@
+syntax = "proto3";
+package message.v1;
+
+option go_package = "github.com/broswen/schemas/gen/message";
+
+message Message {
+  int32 id = 1;
+  string sender = 2;
+  string recipient = 3;
+  repeated string tags = 4;
+  string content = 5;
+}
