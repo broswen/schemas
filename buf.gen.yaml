@@ -5,5 +5,7 @@ managed:
     default: github.com/broswen/schemas/gen
 plugins:
   - plugin: buf.build/protocolbuffers/go
-    out: gen
+    out: gen/go
     opt: paths=source_relative
+  - plugin: buf.build/protocolbuffers/js
+    out: gen/js
