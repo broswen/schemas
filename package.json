@@ -2,7 +2,7 @@
   "name": "schemas",
   "version": "0.3.0",
   "description": "",
-  "main": "address.js",
+  "main": "gen/js/address.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
