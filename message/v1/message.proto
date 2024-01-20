@@ -3,10 +3,17 @@ package message.v1;
 
 option go_package = "github.com/broswen/schemas/gen/message";
 
+enum Type {
+  TYPE_UNSPECIFIED = 0;
+  TYPE_PUBLIC = 1;
+  TYPE_PRIVATE = 2;
+}
+
 message Message {
   int32 id = 1;
   string sender = 2;
   string recipient = 3;
   repeated string tags = 4;
   string content = 5;
+  Type type = 6;
 }
