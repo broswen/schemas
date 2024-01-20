@@ -9,3 +9,4 @@ plugins:
     opt: paths=source_relative
   - plugin: buf.build/protocolbuffers/js
     out: gen/js
+    opt: import_style=es6
