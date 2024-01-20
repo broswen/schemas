@@ -1,12 +1,12 @@
 .PHONY = build lint breaking
 build: format lint breaking
-	buf generate
+	buf generate protos
 
 lint:
-	buf lint
+	buf lint protos
 
 breaking:
-	buf breaking --against ".git#branch=main"
+	buf breaking protos --against ".git#branch=main"
 
 format:
-	buf format -w
+	buf format -w protos
